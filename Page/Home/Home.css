@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background-color: #fcecf4;
+}
+
+/* Text section styling */
+.text-section {
+    max-width: 40%;
+}
+
+.text-section h3 {
+    color: #1d9bd1;
+    font-size: 22px;
+}
+
+.text-section h1 {
+    color: #e30052;
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+.text-section p {
+    color: #888888;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.login-btn, .signin-btn {
+    background-color: #1d9bd1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover, .signin-btn:hover {
+    background-color: #0082a8;
+}
+
+.signin-btn {
+    background-color: white;
+    color: #1d9bd1;
+    border: 2px solid #1d9bd1;
+}
+
+.signin-btn:hover {
+    color: white;
+    background-color: #1d9bd1;
+}
+
+/* Image section styling */
+.image-section img {
+    width: 550px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 200px;
+}
+/* Section Titles */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    color: #e30052;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e30052;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border: 2px solid #e30052;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #e30052;
+}
+
+.card p {
+    font-size: 14px;
+    color: #888888;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #e30052;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #d0004a;
+}
+/* Section Title */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    color: #e30052;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e30052;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* Timeline Section */
+.timeline {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #e30052;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-event {
+    padding: 10px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-event.left {
+    left: 0;
+}
+
+.timeline-event.right {
+    left: 50%;
+}
+
+.timeline-event .content {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.timeline-event .content p:first-child {
+    color: #e30052;
+    font-weight: bold;
+}
+
+.timeline-event.left .content {
+    margin-right: 20px;
+}
+
+.timeline-event.right .content {
+    margin-left: 20px;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #e30052;
+    border: 3px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-event.right::before {
+    left: -10px;
+}
+/* learning-path Section */
+.learning-path{
+    background-color: #fcecf4;
+    padding: 30px 0;
+}
+/* Courses Section */
+.courses {
+    background-color: white;
+    text-align: center;
+}
+
+.courses .see-more {
+    display: block;
+    margin: 20px auto;
+    background-color: transparent;
+    border: none;
+    color: #1d9bd1;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.courses .see-more:hover {
+    color: #0a6b8d;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #fcecf4;
+    padding: 30px 0;
+}
+
+.reviews-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+.review::before {
+    content: '“';
+    font-size: 40px;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #e30052;
+}
