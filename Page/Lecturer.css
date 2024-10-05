@@ -8,8 +8,10 @@ body {
     font-family: Arial, sans-serif;
 }text-section
 /* Banner-lecturer */
-.Banner-lecturer{
-    background-color: #fcecf4;
+.Banner{
+    background-color: lightcoral;
+    height: 150px;
+    justify-content: center;
 }
 h2 {
     text-align: center;

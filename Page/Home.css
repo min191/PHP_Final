@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    height: 100vh;
+    height: 95vh;
     background-color: #fcecf4;
 }
 
@@ -72,10 +72,11 @@ body {
 
 /* Image section styling */
 .image-section img {
-    width: 550px;
+    width: 450px;
     height: auto;
     border-radius: 8px;
-    margin-top: 200px;
+    margin-top: 50px;
+    z-index: 0;
 }
 /* Section Titles */
 h2 {

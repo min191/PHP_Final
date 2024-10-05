@@ -32,6 +32,8 @@
         display: flex;
         align-items: center;
         margin-right: 20px;
+        text-decoration: none;
+        color:black;
     }
 
     .logo img {
@@ -76,21 +78,21 @@
 
     <div class="navbar">
         <div class="navbar-left">
-            <div class="logo">
+            <a href="../Page/HomePage.php" class="logo">
                 <img src="../img/Logo.png" alt="Logo">
                 <span>LOGO</span>
-            </div>
+            </a>
         </div>
         <div class="navbar-right">
             <div class="nav-links">
-                <a href="#">LECTURER</a>
-                <a href="#">BLOG</a>
+                <a href="../Page/LecturerPage.php">LECTURER</a>
+                <a href="../Page/Blog.php">BLOG</a>
                 <a href="#">COURSE</a>
                 <a href="#">FINANCE</a>
                 <a href="#">Q&A</a>
             </div>
             <div class="profile-icon">
-                <a href="#">
+                <a href="../Page/Profile.php">
                     <i class="fa-regular fa-user"></i>
                 </a>
             </div>

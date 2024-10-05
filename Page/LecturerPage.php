@@ -9,10 +9,13 @@
 </head>
 
 <body>
-    <?php include '../../Component/Header.php';?>
-    <div class="Banner-lecturer">
-        <h2>Lecturer</h2>
+    <?php include '../Component/Header.php';?>
+    <div class="Banner">
+        <h1>
+            Lecturer
+        </h1>
     </div>
+    <h2>Lecturer</h2>
     <section class="lecturer-section">
         <div class="lecturer-grid">
             <!-- Lecturer 1 -->
@@ -96,7 +99,7 @@
         </div>
     </section>
 
-    <?php include '../../Component/Footer.php';?>
+    <?php include '../Component/Footer.php';?>
 </body>
 
 </html>

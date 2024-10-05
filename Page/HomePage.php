@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="Home.css">
 </head>
 
 <body>
-    <?php include '../../Component/Header.php';?>
+    <?php include '../Component/Header.php';?>
     <!--Banner Section-->
     <div class="container">
         <!-- Text Section -->
@@ -27,12 +27,12 @@
 
         <!-- Image Section -->
         <div class="image-section">
-            <img src="../../img/BannerHomePage.png" alt="Learning illustration">
+            <img src="../img/Banner_Home.png" alt="Learning illustration">
         </div>
     </div>
 
-     <!-- About Us Section with Timeline -->
-     <section class="about-us">
+    <!-- About Us Section with Timeline -->
+    <section class="about-us">
         <h2>About Us</h2>
         <div class="timeline">
             <div class="timeline-event left">
@@ -66,7 +66,32 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
                 <button>See More</button>
             </div>
+            <div class="card">
+                <img src="front-end-image.png" alt="Front-End">
+                <h3>Front-End</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+                <button>See More</button>
+            </div>
+            <div class="card">
+                <img src="back-end-image.png" alt="Back-End">
+                <h3>Back-End</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+                <button>See More</button>
+            </div>
+            <div class="card">
+                <img src="back-end-image.png" alt="Back-End">
+                <h3>Back-End</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+                <button>See More</button>
+            </div>
+            <div class="card">
+                <img src="back-end-image.png" alt="Back-End">
+                <h3>Back-End</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+                <button>See More</button>
+            </div>
         </div>
+
     </div>
 
     <!-- Courses Section -->
@@ -110,7 +135,7 @@
             </div>
         </div>
     </div>
-    <?php include '../../Component/Footer.php';?>
+    <?php include '../Component/Footer.php';?>
 </body>
 
 </html>
