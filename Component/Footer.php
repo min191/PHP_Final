@@ -138,7 +138,7 @@
             <p><i class="fa fa-envelope"></i> Example@gmail.com</p>
         </div>
     </div>
-
+    <hr />
     <div class="footer social-container">
         <div class="social-icons">
             <a href="#"><i class="fa fa-facebook"></i></a>

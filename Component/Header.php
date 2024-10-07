@@ -87,7 +87,7 @@
             <div class="nav-links">
                 <a href="../Page/LecturerPage.php">LECTURER</a>
                 <a href="../Page/Blog.php">BLOG</a>
-                <a href="#">COURSE</a>
+                <a href="../Page/Course.php">COURSE</a>
                 <a href="#">FINANCE</a>
                 <a href="#">Q&A</a>
             </div>
