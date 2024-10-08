@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
     <script src="https://kit.fontawesome.com/3d2fa990ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/login.css">
     <style>
     /* Basic styling for the navigation bar */
     body {
@@ -92,7 +93,7 @@
                 <a href="#">Q&A</a>
             </div>
             <div class="profile-icon">
-                <a href="../Page/Profile.php">
+                <a class="box-hidden show_login">
                     <i class="fa-regular fa-user"></i>
                 </a>
             </div>
@@ -100,5 +101,5 @@
     </div>
 
 </body>
-
+<script src="../js/login.js"></script>
 </html>
