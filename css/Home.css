@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
     font-family: Arial, sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -151,6 +154,7 @@ h2::after {
 
 .card button:hover {
     background-color: #d0004a;
+
 }
 
 /* Timeline Section */
@@ -244,7 +248,7 @@ h2::after {
     color: #1d9bd1;
     font-size: 16px;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .courses .see-more:hover {

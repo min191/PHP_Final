@@ -1,33 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What Will You Learn?</title>
-    <link rel="stylesheet" href="main2.css" />
-  </head>
-  <body>
-    <div class="course-container">
-      <div class="course-info">
-        <h2 class="course-title">Basic JavaScript Programming</h2>
-        <p class="course-description">
-          Learning basic JavaScript is suitable for those who have never studied
-          programming.<br />
-          With over 100 lessons and practical exercises after each lesson.
-        </p>
-      </div>
-      <div class="course-card">
-        <div>
-          <img src="../img/java.jpg" alt=""/>
-        </div>
-        <button class="buy-button">Buy Now</button>
-        <div class="course-details">
-          <p><span class="icon">🕒</span> Thời lượng: 82h30'</p>
-          <p><span class="icon">👥</span> 123,132 lượt đăng kí</p>
-          <p><span class="icon">📚</span> Số Bài Giảng: 37</p>
+<div class="modal">
+  <div class="modal-content">
+    <i class="fa fa-times modal-close"></i>
+    <div class="section-form">
+      <div class="container_login">
+        <div class="inner-wrap" id="container_login">
+          <div class="form-container sign-up">
+            <form action="">
+              <h1>Create Account</h1>
+              <div class="social-icons">
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <span>or use your email for registeration</span>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <div class="matkhau2">
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="Enter your password"
+                />
+                <i class="fa fa-eye show_2"></i>
+              </div>
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+          <div class="form-container sign-in">
+            <form action="">
+              <h1>Login</h1>
+              <div class="social-icons">
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <span>or use your email password</span>
+
+              <input type="email" placeholder="Email" />
+              <div class="matkhau2">
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="Enter your password"
+                />
+                <i class="fa fa-eye show_2"></i>
+              </div>
+
+              <a href="">Forget Your Password</a>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <div class="toggle-container">
+            <div class="toggle-2">
+              <div class="toggle-panel toggle-left">
+                <h1>Welcome back</h1>
+                <button type="submit" class="hidden" id="login">Sign Up</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <button type="submit" class="hidden" id="register">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</div>

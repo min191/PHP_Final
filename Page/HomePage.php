@@ -58,37 +58,49 @@
                 <img src="front-end-image.png" alt="Front-End">
                 <h3>Front-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
             <div class="card">
                 <img src="back-end-image.png" alt="Back-End">
                 <h3>Back-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
             <div class="card">
                 <img src="front-end-image.png" alt="Front-End">
                 <h3>Front-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
             <div class="card">
                 <img src="back-end-image.png" alt="Back-End">
                 <h3>Back-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
             <div class="card">
                 <img src="back-end-image.png" alt="Back-End">
                 <h3>Back-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
             <div class="card">
                 <img src="back-end-image.png" alt="Back-End">
                 <h3>Back-End</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>See More</button>
+                <button>
+                    <a href="#">See More</a>
+                </button>
             </div>
         </div>
 
@@ -102,22 +114,36 @@
                 <img src="html-image.png" alt="HTML">
                 <h3>HTML</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <button>See More</button>
+                <a href="../Page/Detail_product.php">
+                    <button>
+                        See More
+                    </button>
+                </a>
             </div>
             <div class="card">
                 <img src="css-image.png" alt="HTML & CSS">
                 <h3>HTML & CSS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <button>See More</button>
+                <a href="#">
+                    <button>
+                        See More
+                    </button>
+                </a>
             </div>
             <div class="card">
                 <img src="javascript-image.png" alt="JavaScript">
                 <h3>JavaScript</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <button>See More</button>
+                <a href="#">
+                    <button>
+                        See More
+                    </button>
+                </a>
             </div>
         </div>
-        <a href="#" class="see-more">See More</a>
+        <a href="#" class="see-more">
+            See More
+        </a>
     </div>
 
     <!-- Review Section -->

@@ -1,98 +1,97 @@
 
 const modalClose = document.querySelector(".modal-close");
 const button = document.querySelector(".show_login");
-const template = `<div class="modal">
-<div class="modal-content">
-  <i class="fa fa-times modal-close"></i>
-  <div class="section-form">
-            <div class="container_login">
-                <div class="inner-wrap" id="container_login">
-                    <div class="form-container sign-up">
-                        <form action="" >
-                            <h1>Create Account</h1>
-                            <div class="social-icons">
-                                <a  class="icon-4" href=""
-                                    ><i class="fa-brands fa-google-plus-g"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-facebook"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-github"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-linkedin-in"></i
-                                ></a>
-                            </div>
-                            <span>or use your email for registeration</span>
-                            <input type="text" placeholder="Name" />
-                            <input   type="email" placeholder="Email" />        
-                            <div class="matkhau2">
-                            <input  
-                                type="password"
-                                name="password"
-                                id=""
-                                placeholder="Enter your password"
-                            />
-                            <i class="fa fa-eye show_2"></i>
-                        </div>
-                            <button type="submit">Sign up</button>
-                        </form>
-                    </div>
-                    <div class="form-container sign-in">
-                        <form action="">
-                            <h1>Sign in</h1>
-                            <div class="social-icons">
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-google-plus-g"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-facebook"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-github"></i
-                                ></a>
-                                <a class="icon-4" href=""
-                                    ><i class="fa-brands fa-linkedin-in"></i
-                                ></a>
-                            </div>
-                            <span>or use your email password</span>
-
-                            <input   type="email" placeholder="Email" />
-                            <div class="matkhau2">
-                <input  
-                    type="password"
-                    name="password"
-                    id=""
-                    placeholder="Enter your password"
+const template = 
+`<div class="modal">
+  <div class="modal-content">
+    <i class="fa fa-times modal-close"></i>
+    <div class="section-form">
+      <div class="container_login">
+        <div class="inner-wrap" id="container_login">
+          <div class="form-container sign-up">
+            <form action="">
+              <h1>Create Account</h1>
+              <div class="social-icons">
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <span>or use your email for registeration</span>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <div class="matkhau2">
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="Enter your password"
                 />
                 <i class="fa fa-eye show_2"></i>
+              </div>
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+          <div class="form-container sign-in">
+            <form action="">
+              <h1>Login</h1>
+              <div class="social-icons">
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a class="icon-4" href=""
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <span>or use your email password</span>
+
+              <input type="email" placeholder="Email" />
+              <div class="matkhau2">
+                <input
+                  type="password"
+                  name="password"
+                  id=""
+                  placeholder="Enter your password"
+                />
+                <i class="fa fa-eye show_2"></i>
+              </div>
+
+              <a href="">Forget Your Password</a>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <div class="toggle-container">
+            <div class="toggle-2">
+              <div class="toggle-panel toggle-left">
+                <h1>Welcome back</h1>
+                <button type="submit" class="hidden" id="login">Sign Up</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <button type="submit" class="hidden" id="register">
+                  Sign Up
+                </button>
+              </div>
             </div>
-            
-                            <a href="">Forget Your Password</a>
-                            <button type="submit">Sign In</button>
-                        </form>
-                    </div>
-                    <div class="toggle-container">
-                        <div class="toggle-2">
-                            <div class="toggle-panel toggle-left">
-                                <h1>Welcome back</h1>
-                                <button type="submit" class="hidden" id="login">
-                                    Sign In
-                                </button>
-                            </div>
-                            <div class="toggle-panel toggle-right">
-                                <h1>Hello, Friend!</h1>
-                                <button type="submit" class="hidden" id="register">
-                                    Sign Up
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-</div>
+      </div>
+    </div>
+  </div>
 </div>`;
 button.addEventListener("click", function () {
     document.body.insertAdjacentHTML("beforeend", template);
@@ -148,7 +147,7 @@ document.body.addEventListener("click", function (event) {
             <i class="fa fa-times modal-close__2"></i>
             <div class="section-form__2">
                 <form action="" >
-                    <h1>Sign in</h1>
+                    <h1>Login</h1>
                     <div class="social-icons">
                         <a class="icon-4" href=""
                             ><i class="fa-brands fa-google-plus-g"></i
@@ -176,7 +175,7 @@ document.body.addEventListener("click", function (event) {
                     <i class="fa fa-eye show_2"></i>
                 </div>  
                     <a href="">Forget Your Password</a>
-                    <button type="submit">Sign In</button>
+                    <button type="submit">Login</button>
                 </form>
             </div>
         </div>

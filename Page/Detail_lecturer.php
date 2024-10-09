@@ -34,17 +34,29 @@
     <!-- About -->
     <div class="about_lecturer">
         <h2> Triết lý giáo dục</h2>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
-        </video>
-        <p>Đối với thầy Đạt, cảm hứng học tập là nguồn động lực quan trọng giúp các bạn học sinh dễ dàng trải qua giai
-            đoạn chuẩn bị cho các kỳ thi khó nhằn. Theo thầy Đạt, bản thân các bài thi đã gây căng thẳng cao, mà giai
-            đoạn học luyện thi cũng cực kỳ khô khan và dễ gây nản chí. Chính vì thế các bạn cần phải có một nguồn động
-            lực, một nguồn cảm hứng giúp các bạn thấy được việc học luyện thi chuẩn hoá không còn là một điều đáng sợ và
-            biến việc ôn luyện trở thành “sở thích” của mình.Để giúp các học sinh có được nguồn cảm hứng học tập, thầy
-            Đạt sử dụng nhiều phương pháp, bao gồm phương pháp kể những câu chuyện về các cựu học sinh thành công của
-            thầy Đạt, giúp các bạn có động lực quyết tâm giành chiến thắng. Hoặc phong cách giảng bài hài.......
-        </p>
+        <iframe style="
+        width:550px;
+        height:350px;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin:20px;
+        " src="https://www.youtube.com/embed/0SJE9dYdpps?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5" frameborder="0"
+            allowfullscreen></iframe>
+        <div style="padding:0 200px">
+            <p>Đối với thầy Đạt, cảm hứng học tập là nguồn động lực quan trọng giúp các bạn học sinh dễ dàng trải qua
+                giai
+                đoạn chuẩn bị cho các kỳ thi khó nhằn. Theo thầy Đạt, bản thân các bài thi đã gây căng thẳng cao, mà
+                giai
+                đoạn học luyện thi cũng cực kỳ khô khan và dễ gây nản chí. Chính vì thế các bạn cần phải có một nguồn
+                động
+                lực, một nguồn cảm hứng giúp các bạn thấy được việc học luyện thi chuẩn hoá không còn là một điều đáng
+                sợ và
+                biến việc ôn luyện trở thành “sở thích” của mình.Để giúp các học sinh có được nguồn cảm hứng học tập,
+                thầy
+                Đạt sử dụng nhiều phương pháp, bao gồm phương pháp kể những câu chuyện về các cựu học sinh thành công
+                của
+                thầy Đạt, giúp các bạn có động lực quyết tâm giành chiến thắng. Hoặc phong cách giảng bài hài.......</p>
+        </div>
         <a href="#">xem thêm</a>
     </div>
     <?php include '../Component/Footer.php';?>

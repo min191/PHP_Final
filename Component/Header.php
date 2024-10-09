@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
     <script src="https://kit.fontawesome.com/3d2fa990ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Header.css">
     <link rel="stylesheet" href="../css/login.css">
     <style>
     /* Basic styling for the navigation bar */
@@ -53,7 +54,7 @@
     }
 
     .nav-links {
-        margin: 0 10px;
+        margin: 0 40px;
     }
 
     .nav-links a {
@@ -67,58 +68,7 @@
         text-decoration: underline;
     }
 
-    .profile-icon img {
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-    }
-
-    /* Căn giữa dropdown menu dưới biểu tượng người dùng */
-    .profile-icon {
-        position: relative;
-        /* Thiết lập vị trí tương đối để căn chỉnh dropdown menu */
-    }
-
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        /* Đặt dropdown menu ngay bên dưới biểu tượng người dùng */
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #f9f9f9;
-        min-width: 150px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-
-
-
-    /* Style the dropdown menu items */
-    .dropdown-menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .dropdown-menu li {
-        padding: 8px 12px;
-    }
-
-    .dropdown-menu li a {
-        text-decoration: none;
-        color: black;
-        display: block;
-    }
-
-    .dropdown-menu li a:hover {
-        background-color: #ddd;
-    }
-
-    /* Show the dropdown menu when hovering over the profile icon */
-    .profile-icon:hover .dropdown-menu {
-        display: block;
-    }
+    
     </style>
 </head>
 
@@ -138,18 +88,31 @@
                 <a href="../Page/Course.php">COURSE</a>
                 <a href="#">FINANCE</a>
                 <a href="../Page/Q&A.php">Q&A</a>
-            </div>
-            <div class="profile-icon">
-                <a>
+                <label class="popup">
+                  <input type="checkbox" />
+                  <div tabindex="0" class="burger">
                     <i class="fa-regular fa-user"></i>
-                </a>
-                <div class="dropdown-menu">
+                  </div>
+                  <nav class="popup-window">
+                    <legend>Quick Start</legend>
                     <ul>
-                        <li><a class="box-hidden show_login">Login</a></li>
-                        <li><a href="../Page/Profile.php">Profile</a></li>
+                      <li>
+                        <button class="show_login">
+                          <i class="fa-solid fa-right-to-bracket"></i>
+                          <span>Log In</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button onclick="window.location.href='../Page/Profile.php'">
+                          <i class="fa-regular fa-address-card"></i>
+                          <span>Profile</span>
+                        </button>
+                      </li>
                     </ul>
-                </div>
+                  </nav>
+                </label>
             </div>
+            
 
         </div>
     </div>

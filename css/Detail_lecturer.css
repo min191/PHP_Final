@@ -13,7 +13,9 @@
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-
+h2{
+    font-size: 30px;
+}
 /* Style for the text section on the left */
 .banner-text {
     flex: 2;
