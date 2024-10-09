@@ -11,9 +11,6 @@
 
 <body>
     <?php include '../Component/Header.php';?>
-    <h1 class="Banner">
-        <span style="color:blue">Home</span>/Blog
-    </h1>
     <h2>News</h2>
     <section class="news">
         <div class="cards-new">

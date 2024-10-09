@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+ /* Style for the main banner container */
+ .banner {
+    display: flex;
+    width: 100%; /* Adjust the width of the banner */
+    height: 350px;
+    background-color: #F9F0F3; /* Light pink background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the text section on the left */
+.banner-text {
+    flex: 2;
+    margin:60px 20px ;
+}
+
+/* Style for the badge at the top */
+.badge {
+    background-color: #F27D81; /* Badge background color */
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Style for the educator's name */
+.name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2C2C2C;
+    margin: 5px 0;
+}
+
+/* Style for the university name */
+.university {
+    font-size: 16px;
+    color: #999999;
+    margin: 5px 0;
+}
+
+/* Style for the quote section */
+.quote {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 15px;
+}
+
+/* Style for the quote icon */
+.quote-icon {
+    color: #F27D81; /* Icon color */
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Style for the image section on the right */
+.banner-image {
+    flex: 1;
+}
+
+/* Style for the educator's image */
+.banner-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    margin-top: 20px;
+}
+/* About*/
+.about_lecturer {
+    width: 1200px; /* Adjust the width for the layout */
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto; /* Center the container */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Title styling */
+.about_lecturer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Darker color for the title */
+    margin-bottom: 20px;
+}
+
+/* Video styling */
+.about_lecturer video {
+    width: 650px; /* Full width video */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    margin-bottom: 20px;
+}
+
+/* Description text styling */
+.about_lecturer p {
+    font-size: 16px;
+    color: #555555; /* Medium grey for readability */
+    line-height: 1.6; /* Space between lines for clarity */
+    text-align: justify; /* Justified text alignment */
+    margin-bottom: 20px;
+}
+
+/* 'Xem Thêm' link styling */
+.about_lecturer a {
+    font-size: 16px;
+    color: #D32F2F; /* Bright red for visibility */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Hover effect for the 'Xem Thêm' link */
+.about_lecturer a:hover {
+    color: #B71C1C; /* Darker red when hovering */
+    text-decoration: underline; /* Underline on hover */
+}

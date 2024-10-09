@@ -10,17 +10,12 @@
 
 <body>
     <?php include '../Component/Header.php';?>
-    <div class="Banner">
-        <h1>
-            Lecturer
-        </h1>
-    </div>
     <h2>Lecturer</h2>
     <section class="lecturer-section">
         <div class="lecturer-grid">
             <!-- Lecturer 1 -->
-            <div class="lecturer-card">
-                <img src="lecturer1.jpg" alt="Đỗ Văn Tiến Đạt">
+            <a href="./Detail_lecturer.php" class="lecturer-card">
+                <img src="../img/khoa.jpg" alt="Đỗ Văn Tiến Đạt">
                 <div class="lecturer-info">
                     <h3>Đỗ Văn Tiến Đạt</h3>
                     <p>📞 +84 12345678</p>
@@ -30,10 +25,10 @@
                         <span>★★★★★</span>
                     </div>
                 </div>
-            </div>
+            </a>
             <!-- Lecturer 2 -->
             <div class="lecturer-card">
-                <img src="lecturer2.jpg" alt="Nguyễn Thị Đức Khoa">
+                <img src="../img/quang.jpg" alt="Nguyễn Thị Đức Khoa">
                 <div class="lecturer-info">
                     <h3>Nguyễn Thị Đức Khoa</h3>
                     <p>📞 +84 12345678</p>
@@ -46,7 +41,7 @@
             </div>
             <!-- Lecturer 3 -->
             <div class="lecturer-card">
-                <img src="lecturer3.jpg" alt="Nguyễn Bắc Minh">
+                <img src="../img/dat.jpg" alt="Nguyễn Bắc Minh">
                 <div class="lecturer-info">
                     <h3>Nguyễn Bắc Minh</h3>
                     <p>📞 +84 12345678</p>
@@ -59,7 +54,7 @@
             </div>
             <!-- Lecturer 4 -->
             <div class="lecturer-card">
-                <img src="lecturer1.jpg" alt="Đỗ Văn Tiến Đạt">
+                <img src="../img/khoa.jpg" alt="Đỗ Văn Tiến Đạt">
                 <div class="lecturer-info">
                     <h3>Đỗ Văn Tiến Đạt</h3>
                     <p>📞 +84 12345678</p>
@@ -72,7 +67,7 @@
             </div>
             <!-- Lecturer 5 -->
             <div class="lecturer-card">
-                <img src="lecturer2.jpg" alt="Nguyễn Thị Đức Khoa">
+                <img src="../img/quang.jpg" alt="Nguyễn Thị Đức Khoa">
                 <div class="lecturer-info">
                     <h3>Nguyễn Thị Đức Khoa</h3>
                     <p>📞 +84 12345678</p>
@@ -85,7 +80,7 @@
             </div>
             <!-- Lecturer 6 -->
             <div class="lecturer-card">
-                <img src="lecturer3.jpg" alt="Nguyễn Bắc Minh">
+                <img src="../img/dat.jpg" alt="Nguyễn Bắc Minh">
                 <div class="lecturer-info">
                     <h3>Nguyễn Bắc Minh</h3>
                     <p>📞 +84 12345678</p>
