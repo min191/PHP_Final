@@ -78,7 +78,7 @@
         <div class="navbar-left">
             <a href="../Page/HomePage.php" class="logo">
                 <img src="../img/Logo.png" alt="Logo">
-                <span>LOGO</span>
+                <span>MKDQT</span>
             </a>
         </div>
         <div class="navbar-right">
@@ -86,7 +86,7 @@
                 <a href="../Page/LecturerPage.php">LECTURER</a>
                 <a href="../Page/Blog.php">BLOG</a>
                 <a href="../Page/Course.php">COURSE</a>
-                <a href="#">FINANCE</a>
+                <a href="../Page/Finance.php">FINANCE</a>
                 <a href="../Page/Q&A.php">Q&A</a>
                 <label class="popup">
                   <input type="checkbox" />

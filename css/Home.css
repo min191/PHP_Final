@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
+    
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 a{
     text-decoration: none;
@@ -60,7 +62,7 @@ a{
 }
 
 .login-btn:hover, .signin-btn:hover {
-    background-color: #0082a8;
+    background-color: #e30052;
 }
 
 .signin-btn {
@@ -235,20 +237,140 @@ h2::after {
     padding: 30px 0;
 }
 /* Courses Section */
-.courses {
-    background-color: white;
-    text-align: center;
+
+.card-wrapper {
+  max-width: 1080px;
+  margin: 0 auto 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.card-list {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-.courses .see-more {
-    display: block;
-    margin: 20px auto;
-    background-color: transparent;
-    border: none;
-    color: #1d9bd1;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
+.card-list .card-item {
+  width: 335px;
+  /* height: 100%; */
+  margin: 10px; /* Adjust margin for better spacing */
+  flex-shrink: 0;
+  position: relative;
+  display: block;
+  background: #ffffff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-list .card-link .badge {
+  color: #5372F0;
+  width: fit-content;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  font-weight: 500;
+  background: #DDE4FF;
+  margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-designer {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.card-list .card-link .badge-marketer {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.card-list .card-link .badge-gamer {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.card-list .card-link .badge-editor {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+  color: #000;
+  font-size: 1.19rem;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372F0;
+}
+
+.card-wrapper .pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+
+.card-wrapper .pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .slide-button {
+  color: #5372F0;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.button-next {
+  right: 10px;
+}
+
+.button-prev {
+  left: 10px;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .slide-button {
+    display: none;
+  }
 }
 
 .courses .see-more:hover {

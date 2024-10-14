@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../css/Finance.css">
 </head>
+
 <body>
-    <button class="box-hidden show_login">
-       asdasdasdas
-    </button>
+    <?php include '../Component/Header.php';?>
+    <h1>Finance</h1>
+    <?php include '../Component/Footer.php';?>
 </body>
-<script src="./script.js"></script>
 
 </html>

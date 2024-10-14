@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/Home.css">
+
 </head>
 
 <body>
@@ -19,9 +20,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet
                 dolo re magna.</p>
-            <div class="buttons">
-                <button class="login-btn">LOG IN</button>
-                <button class="signin-btn">SIGN IN</button>
+            <div class="buttons ">
+                <button class=" login-btn">LOG IN</button>
+                <button class=" signin-btn">SIGN IN</button>
             </div>
         </div>
 
@@ -107,44 +108,65 @@
     </div>
 
     <!-- Courses Section -->
-    <div class="courses">
-        <h2>Courses</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="html-image.png" alt="HTML">
-                <h3>HTML</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="../Page/Detail_product.php">
-                    <button>
-                        See More
-                    </button>
+    <h2>Courses</h2>
+    <div class="card-wrapper">
+        <!-- Card slides container -->
+        <ul class="card-list wrapper">
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../img/Courses/HTML&Css.jpg" alt="Card Image" class="card-image">
+                    <p class="badge badge-designer">Front-end</p>
+                    <h2 class="card-title">HTML structures web content with text, images, and links. CSS styles HTML
+                        elements, controlling colors and layouts.</h2>
+                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
-            </div>
-            <div class="card">
-                <img src="css-image.png" alt="HTML & CSS">
-                <h3>HTML & CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">
-                    <button>
-                        See More
-                    </button>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../img/Courses/js co ban.jpg" alt="Card Image" class="card-image">
+                    <p class="badge badge-developer">Front-end</p>
+                    <h2 class="card-title">JavaScript is a popular programming language primarily used to create dynamic
+                        interactions on the web.</h2>
+                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
-            </div>
-            <div class="card">
-                <img src="javascript-image.png" alt="JavaScript">
-                <h3>JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">
-                    <button>
-                        See More
-                    </button>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../img/Courses/java.jpg" alt="Card Image" class="card-image">
+                    <p class="badge badge-marketer">Back-end</p>
+                    <h2 class="card-title">Java is a powerful, object-oriented programming language developed by Sun
+                        Microsystems in the mid-1990s.</h2>
+                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
-            </div>
-        </div>
-        <a href="#" class="see-more">
-            See More
-        </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../img/Courses/pts.webp" alt="Card Image" class="card-image">
+                    <p class="badge badge-gamer">Design</p>
+                    <h2 class="card-title">Adobe Photoshop is a professional image editing software developed by Adobe
+                        Systems.</h2>
+                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#" class="card-link">
+                    <img src="../img/Courses/sql.jpg" alt="Card Image" class="card-image">
+                    <p class="badge badge-editor">Database</p>
+                    <h2 class="card-title">SQL (Structured Query Language) is a programming language used to manage and
+                        manipulate relational databases.</h2>
+                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Navigation Buttons -->
+        <button class="slide-button button-prev">&#9664;</button>
+        <button class="slide-button button-next">&#9654;</button>
+        <!-- Pagination -->
+        <!-- <div class="pagination"></div> -->
+
     </div>
+
 
     <!-- Review Section -->
     <div class="reviews">
@@ -163,5 +185,7 @@
     </div>
     <?php include '../Component/Footer.php';?>
 </body>
+<!-- <script src="../js/login.js"></script> -->
+<script src="../js/Carousel_home.js"></script>
 
 </html>

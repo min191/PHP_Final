@@ -10,6 +10,8 @@
 
 <body>
     <?php include '../Component/Header.php';?>
+    <h1>Course</h1>
+    <?php include '../Component/Footer.php';?>
 </body>
 
 </html>
