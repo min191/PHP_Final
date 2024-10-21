@@ -34,60 +34,88 @@ h2::after {
 
 /* Grid Layout for Lecturers */
 .lecturer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
     padding: 20px;
+    justify-content: center; /* Center the items horizontally */
 }
-
-.lecturer-card {
-    background-color: white;
-    border: 2px solid #e30052;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: box-shadow 0.3s ease;
-}
-
-.lecturer-card img {
+/* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    position: relative;
+    width: 55vh;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-color);
+  }
+  
+  .card__img {
+    height: 192px;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #e30052;
-}
-
-.lecturer-info {
-    padding: 20px;
-}
-
-.lecturer-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.lecturer-info p {
-    font-size: 14px;
-    margin: 5px 0;
-    color: #666;
-}
-
-.rating {
-    margin-top: 10px;
-}
-
-.rating span {
-    color: #ffcc00;
+  }
+  
+  .card__img svg {
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 57px);
+  }
+  
+  .card__avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  
+  .card__title {
+    margin-top: 60px;
+    font-weight: 500;
     font-size: 18px;
-}
+    color: var(--main-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--submain-color);
+  }
+  
+  .card__btn {
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--main-color);
+    background: var(--bg-color);
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
 
-.lecturer-card:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
 
-/* For smaller screens, fallback to a single-column layout */
-@media screen and (max-width: 800px) {
-    .lecturer-grid {
-        grid-template-columns: 1fr;
-    }
-}
+  .card__btn:hover {
+    background: rgb(108, 108, 108);
+  }
+  .card:hover {
+        transform: translateY(-10px);
+  }

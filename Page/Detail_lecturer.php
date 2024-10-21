@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail_lecturer</title>
     <link rel="stylesheet" href="../css/Detail_lecturer.css">
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </div>
         <!-- Image section of the banner -->
         <div class="banner-image">
-            <img src="../img/dat.jpg" alt="Đỗ Văn Tiến Đạt">
+            <img src="../img/khoa.jpg" alt="Đỗ Văn Tiến Đạt">
         </div>
     </div>
     <!-- About -->
@@ -57,7 +58,28 @@
                 của
                 thầy Đạt, giúp các bạn có động lực quyết tâm giành chiến thắng. Hoặc phong cách giảng bài hài.......</p>
         </div>
-        <a href="#">xem thêm</a>
+        <div>
+            <h2>Các lớp đang dạy</h2>
+            <ul class="card-list wrapper">
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="../img/Courses/HTML&Css.jpg" alt="Card Image" class="card-image">
+                        <p class="badge badge-designer">Front-end</p>
+                        <h2 class="card-title">HTML structures web content with text, images, and links. CSS styles HTML
+                            elements, controlling colors and layouts.</h2>
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="../img/Courses/js co ban.jpg" alt="Card Image" class="card-image">
+                        <p class="badge badge-developer">Front-end</p>
+                        <h2 class="card-title">JavaScript is a popular programming language primarily used to create
+                            dynamic
+                            interactions on the web.</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <?php include '../Component/Footer.php';?>
 </body>
