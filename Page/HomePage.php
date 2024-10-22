@@ -20,10 +20,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet
                 dolo re magna.</p>
-            <div class="buttons ">
-                <button class=" login-btn">LOG IN</button>
-                <button class=" signin-btn">SIGN IN</button>
-            </div>
         </div>
 
         <!-- Image Section -->
@@ -54,55 +50,127 @@
     <!-- Learning Path Section -->
     <div class="learning-path">
         <h2>Learning Path</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="front-end-image.png" alt="Front-End">
-                <h3>Front-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
+        <div class="slide-container-Learning">
+            <div class="slide-content-Learning">
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name-Learning">Front-end</h2>
+                        <p class="description-Learning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                            fuga animi dignissimos eos autem minus placeat possimus aliquid
+                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
+                            repellat veniam modi reprehenderit.
+                        </p>
+
+                        <button class="button-Learning ">See more</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name-Learning">Front-end</h2>
+                        <p class="description-Learning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                            fuga animi dignissimos eos autem minus placeat possimus aliquid
+                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
+                            repellat veniam modi reprehenderit.
+                        </p>
+
+                        <button class="button-Learning ">See more</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name-Learning">Front-end</h2>
+                        <p class="description-Learning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                            fuga animi dignissimos eos autem minus placeat possimus aliquid
+                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
+                            repellat veniam modi reprehenderit.
+                        </p>
+
+                        <button class="button-Learning ">See more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name-Learning">Front-end</h2>
+                        <p class="description-Learning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                            fuga animi dignissimos eos autem minus placeat possimus aliquid
+                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
+                            repellat veniam modi reprehenderit.
+                        </p>
+
+                        <button class="button-Learning ">See more</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name-Learning">Front-end</h2>
+                        <p class="description-Learning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                            fuga animi dignissimos eos autem minus placeat possimus aliquid
+                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
+                            repellat veniam modi reprehenderit.
+                        </p>
+
+                        <button class="button-Learning ">See more</button>
+                    </div>
+                </div>
+
             </div>
-            <div class="card">
-                <img src="back-end-image.png" alt="Back-End">
-                <h3>Back-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
-            </div>
-            <div class="card">
-                <img src="front-end-image.png" alt="Front-End">
-                <h3>Front-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
-            </div>
-            <div class="card">
-                <img src="back-end-image.png" alt="Back-End">
-                <h3>Back-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
-            </div>
-            <div class="card">
-                <img src="back-end-image.png" alt="Back-End">
-                <h3>Back-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
-            </div>
-            <div class="card">
-                <img src="back-end-image.png" alt="Back-End">
-                <h3>Back-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
-                <button>
-                    <a href="#">See More</a>
-                </button>
-            </div>
+        </div>
+
+        <div class="carousel-controls-Learning">
+            <button class="prev-btn-Learning" onclick="slideCards('prev')">&#10094;</button>
+            <button class="next-btn-Learning" onclick="slideCards('next')">&#10095;</button>
         </div>
 
     </div>
@@ -187,5 +255,7 @@
 </body>
 <!-- <script src="../js/login.js"></script> -->
 <script src="../js/Carousel_home.js"></script>
+<script src="../demo/index.js"></script>
+
 
 </html>

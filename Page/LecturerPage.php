@@ -18,7 +18,6 @@
             <?php include '../Component/LecturerCpn.php';?>
             <?php include '../Component/LecturerCpn.php';?>
             <?php include '../Component/LecturerCpn.php';?>
-            <?php include '../Component/LecturerCpn.php';?>
         </div>
     <?php include '../Component/Footer.php';?>
 </body>

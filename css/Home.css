@@ -45,22 +45,6 @@ a{
     line-height: 1.6;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
-.login-btn, .signin-btn {
-    background-color: #1d9bd1;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .login-btn:hover, .signin-btn:hover {
     background-color: #e30052;
 }
@@ -112,53 +96,143 @@ h2::after {
     margin: 20px 0;
 }
 
-/* Card Styling */
+/* Learning Styling */
+
+.slide-container-Learning{
+  padding: 40px;
+}
+/* Prevent content from overflowing */
+.slide-container-Learning {
+  max-width: 1080px;
+  margin: 0 auto 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+/* Make slide-content wide enough to accommodate all cards */
+.slide-content-Learning {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(360px * 5);
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Position carousel controls */
+.carousel-controls-Learning {
+  position: absolute;
+  top: 230%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 50px;
+
+}
+
+.carousel-controls-Learning .prev-btn-Learning ,
+.carousel-controls-Learning .next-btn-Learning  {
+  background-color: #AD1D45;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-controls-Learning .prev-btn-Learning :hover,
+.carousel-controls-Learning .next-btn-Learning :hover {
+  background-color: #FD638E;
+}
+
 .card {
-    background-color: white;
-    border: 2px solid #e30052;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+  border-radius: 25px;
+  background-color: #FFF;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adding a shadow to give depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.05); /* Slight lift and scale effect */
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
-.card img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 20px;
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
 }
-
-.card h3 {
-    font-size: 20px;
-    color: #e30052;
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0px;
 }
-
-.card p {
-    font-size: 14px;
-    color: #888888;
-    margin: 10px 0;
-}
-
-.card button {
-    background-color: #e30052;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.card button:hover {
-    background-color: #d0004a;
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0 25px;
+  background-color: #AD1D45;
 
 }
+.overlay::before,
+.overlay::after{
+  content:'' ;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #AD1D45;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0 ;
+  background-color: #fff;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #FFF;
+  padding:  3px;
+}
 
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+}
+.name-Learning{
+  font-size: 18px;
+  /* font-weight: 500; */
+  color: #333;
+}
+.description-Learning{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button-Learning {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #AD1D45;
+  border-radius: 4px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.button-Learning :hover{
+  background-color: #FD638E;
+}
 /* Timeline Section */
 .timeline {
     position: relative;
@@ -347,22 +421,44 @@ h2::after {
   opacity: 1;
 }
 
-.card-wrapper .slide-button {
-  color: #5372F0;
+
+.slide-button {
+  background-color: #5372F0; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  transform: translateY(-50%);
   z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-next {
-  right: 10px;
+  right: 6%;
+  top:330%;
 }
 
 .button-prev {
-  left: 10px;
+  left: 6%;
+  top:330%;
 }
 
-/* Responsive media query code for small screens */
+.slide-button:hover {
+  background-color: #3d5bbf;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slide-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(83, 114, 240, 0.5);
+}
+
 @media (max-width: 768px) {
   .card-wrapper {
     margin: 0 10px 25px;
@@ -377,7 +473,6 @@ h2::after {
     color: #0a6b8d;
 }
 
-/* Reviews Section */
 .reviews {
     background-color: #fcecf4;
     padding: 30px 0;

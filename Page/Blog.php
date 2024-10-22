@@ -33,24 +33,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <button>Read More</button>
             </div>
-            <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
-            </div>
-            <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
-            </div>
-            <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
-            </div>
             <!-- More cards can go here -->
         </div>
     </section>
