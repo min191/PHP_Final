@@ -255,7 +255,7 @@
 </body>
 <!-- <script src="../js/login.js"></script> -->
 <script src="../js/Carousel_home.js"></script>
-<script src="../demo/index.js"></script>
+<script src="../js/Learning_home.js"></script>
 
 
 </html>

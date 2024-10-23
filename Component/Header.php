@@ -78,7 +78,7 @@
         <div class="navbar-left">
             <a href="../Page/HomePage.php" class="logo">
                 <img src="../img/Logo.png" alt="Logo">
-                <span>MKDQT</span>
+                <span>Fast Learn</span>
             </a>
         </div>
         <div class="navbar-right">
