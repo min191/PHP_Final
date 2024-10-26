@@ -23,7 +23,7 @@
             </p>
         </div>
         <div class="course-card">
-            <img src="../img/java.jpg" alt="" style="with:100px">
+            <img src="../img/Courses/js.jpg" alt="" style="with:100px">
             <button class="buy-button">Buy Now</button>
             <div class="course-details">
                 <p><span class="icon">🕒</span> Thời lượng: 82h30'</p>

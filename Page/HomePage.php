@@ -186,7 +186,7 @@
                     <p class="badge badge-designer">Front-end</p>
                     <h2 class="card-title">HTML structures web content with text, images, and links. CSS styles HTML
                         elements, controlling colors and layouts.</h2>
-                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="window.location.href='./Detail_product.php'" class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
             </li>
             <li class="card-item">
@@ -195,7 +195,7 @@
                     <p class="badge badge-developer">Front-end</p>
                     <h2 class="card-title">JavaScript is a popular programming language primarily used to create dynamic
                         interactions on the web.</h2>
-                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="window.location.href='./Detail_product.php'" class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
             </li>
             <li class="card-item">
@@ -204,7 +204,7 @@
                     <p class="badge badge-marketer">Back-end</p>
                     <h2 class="card-title">Java is a powerful, object-oriented programming language developed by Sun
                         Microsystems in the mid-1990s.</h2>
-                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="window.location.href='./Detail_product.php'" class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
             </li>
             <li class="card-item">
@@ -213,7 +213,7 @@
                     <p class="badge badge-gamer">Design</p>
                     <h2 class="card-title">Adobe Photoshop is a professional image editing software developed by Adobe
                         Systems.</h2>
-                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="window.location.href='./Detail_product.php'" class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
             </li>
             <li class="card-item">
@@ -222,7 +222,7 @@
                     <p class="badge badge-editor">Database</p>
                     <h2 class="card-title">SQL (Structured Query Language) is a programming language used to manage and
                         manipulate relational databases.</h2>
-                    <button class="card-button"><i class="fa-solid fa-angle-right"></i></button>
+                    <button onclick="window.location.href='./Detail_product.php'" class="card-button"><i class="fa-solid fa-angle-right"></i></button>
                 </a>
             </li>
         </ul>

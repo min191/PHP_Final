@@ -33,14 +33,14 @@
                     <label for="phone">Số Điện Thoại:</label>
                     <input type="tel" id="phone" name="phone">
                 </div>
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <label for="quequan">Quê Quán:</label>
                     <input type="text" id="quequan" name="quequan">
                 </div>
                 <div class="input-group">
                     <label for="address">Địa Chỉ Thường Trú:</label>
                     <input type="text" id="address" name="address">
-                </div>
+                </div> -->
 
                 <h3>Khóa Học Đã Đăng Kí:</h3>
                 <table>

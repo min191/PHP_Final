@@ -110,11 +110,10 @@
         <div>
             <h3>Home</h3>
             <ul>
-                <li><a href="#">LECTURER</a></li>
-                <li><a href="#">NOTICE</a></li>
-                <li><a href="#">COURSE</a></li>
-                <li><a href="#">FINANCE</a></li>
-                <li><a href="#">Q&A</a></li>
+                <li><a href="../Page/LecturerPage.php">LECTURER</a></li>
+                <li><a href="../Page/Course.php">COURSE</a></li>
+                <li><a href="../Page/Finance.php">FINANCE</a></li>
+                <li><a href="../Page/Blog.php">Blog</a></li>
             </ul>
         </div>
 

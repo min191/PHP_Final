@@ -4,7 +4,7 @@ const slideContainer = document.querySelector('.slide-content-Learning');
 
 function slideCards(direction) {
   const slideWidth = 360; // Width of a card (including margin/padding)
-  const maxSlide = totalSlides - 1; // Last slide index
+  const maxSlide = totalSlides-3; // Last slide index
   
   if (direction === 'next') {
     if (currentSlide < maxSlide) {

@@ -230,6 +230,7 @@ h2::after {
   cursor: pointer;
   transition: all 0.3 ease;
 }
+
 .button-Learning :hover{
   background-color: #FD638E;
 }

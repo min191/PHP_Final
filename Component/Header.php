@@ -8,72 +8,10 @@
     <script src="https://kit.fontawesome.com/3d2fa990ba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/Header.css">
     <link rel="stylesheet" href="../css/login.css">
-    <style>
-    /* Basic styling for the navigation bar */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        background-color: #f8f9fa;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .navbar-left {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-        text-decoration: none;
-        color: black;
-    }
-
-    .logo img {
-        height: 70px;
-    }
-
-    .logo span {
-        font-size: 18px;
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-    .navbar-right {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-links {
-        margin: 0 40px;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #007bff;
-        margin: 0 10px;
-        font-size: 16px;
-    }
-
-    .nav-links a:hover {
-        text-decoration: underline;
-    }
-
     
-    </style>
 </head>
 
 <body>
-
     <div class="navbar">
         <div class="navbar-left">
             <a href="../Page/HomePage.php" class="logo">
@@ -87,14 +25,13 @@
                 <a href="../Page/Blog.php">BLOG</a>
                 <a href="../Page/Course.php">COURSE</a>
                 <a href="../Page/Finance.php">FINANCE</a>
-                <a href="../Page/Q&A.php">Q&A</a>
+                <!-- <a href="../Page/Q&A.php">Q&A</a> -->
                 <label class="popup">
                   <input type="checkbox" />
                   <div tabindex="0" class="burger">
                     <i class="fa-regular fa-user"></i>
                   </div>
                   <nav class="popup-window">
-                    <legend>Quick Start</legend>
                     <ul>
                       <li>
                         <button class="show_login">
@@ -116,8 +53,46 @@
 
         </div>
     </div>
+    <div class="chat-card hidden">
+      <div class="chat-header">
+        <div class="h2">ChatGPT</div>
+      </div>
+      <div class="chat-body">
+        <div class="message incoming">
+          <p>Hello, how can I assist you today?</p>
+        </div>
+        <div class="message outgoing">
+          <p>I have a question about your services.</p>
+        </div>
+        <div class="message incoming">
+          <p>Sure, I'm here to help. What would you like to know?</p>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input placeholder="Type your message" type="text" />
+        <button>Send</button>
+      </div>
+    </div>
+    <button class="chat-box">
+      <div class="chat">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9l.3-.5z"
+          />
+        </svg>
+      </div>
+      <div class="chat-text">Chat</div>
+    </button>
 
-</body>
+    <script>
+      const chatBox = document.querySelector(".chat-box");
+      const chatCard = document.querySelector(".chat-card");
+
+      chatBox.addEventListener("click", () => {
+        chatCard.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 <script src="../js/login.js"></script>
 
 </html>
