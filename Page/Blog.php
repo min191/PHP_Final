@@ -16,22 +16,24 @@
         <div class="cards-new">
             <!-- Repeatable Card Structure -->
             <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
+                <!-- <img src="news-image1.png" alt="News 1"> -->
+                <h3>Hướng dẫn chi tiết cách sử dụng Dev Mode trong khóa Pro</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
+                <button onclick="window.location.href='../page/News1.php'">Read More</button>
             </div>
             <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
+                <!-- <img src="news-image1.png" alt="News 1"> -->
+                <h3>Xin chào mọi người, mình là Lý Cao Nguyên, mình đã làm một dự án website front-end với hơn 100 bài
+                    học và
+                    200 bài viết.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
+                <button onclick="window.location.href='../page/News3.php'">Read More</button>
             </div>
             <div class="card">
-                <img src="news-image1.png" alt="News 1">
-                <h3>News Title 1</h3>
+                <!-- <img src="news-image1.png" alt="News 1"> -->
+                <h3> ReactJS with Typescript [Series]. Phần 1 Basic Typescript</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Read More</button>
+                <button onclick="window.location.href='../page/News2.php'">Read More</button>
             </div>
             <!-- More cards can go here -->
         </div>
@@ -41,12 +43,12 @@
     <section class="team-building">
         <div class="cards-team">
             <div class="card">
-                <img src="team-building-image.png" alt="Team Building">
+                <img src="https://liontrip.vn/wp-content/uploads/2022/05/Untitled-design-2.png" alt="Team Building">
                 <h3>Summer 2022</h3>
             </div>
             <div class="card">
-                <img src="team-building-image.png" alt="Team Building">
-                <h3>Summer 2022</h3>
+                <img src="https://dulichsaigon.edu.vn/wp-content/uploads/2024/03/du-lich-team-building-la-gi-bat-mi-tat-ca-thong-tin-ve-hoat-dong-team-building-1.jpg" alt="Team Building">
+                <h3>Summer 2023</h3>
             </div>
         </div>
     </section>
@@ -79,6 +81,6 @@
     </div>
     <?php include '../Component/Footer.php';?>
 </body>
-<script  src="../js/Q&A.js"></script>   
+<script src="../js/Q&A.js"></script>
 
 </html>
