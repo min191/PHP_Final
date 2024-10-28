@@ -55,7 +55,7 @@
     </div>
     <div class="chat-card hidden">
       <div class="chat-header">
-        <div class="h2">ChatGPT</div>
+        <div class="h2">Fast Learn</div>
       </div>
       <div class="chat-body">
         <div class="message incoming">

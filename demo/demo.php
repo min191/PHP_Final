@@ -1,66 +1,73 @@
 <?php
-include '../Component/Header.php';
-include '../Connection/db_connection.php';
+// Kết nối đến cơ sở dữ liệu
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "your_database_name";
 
-// Set the Lecturer ID to retrieve data (you can adjust this value or make it dynamic based on user input)
-$lecturer_id = 1; // Example Lecturer ID, change this as needed
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// SQL query to fetch lecturer data from the Lecturers table
-$sql = "SELECT * FROM Lecturers WHERE Lecturer_ID = $lecturer_id";
-$result = $conn->query($sql);
+// Kiểm tra kết nối
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-if ($result->num_rows > 0) {
-    // Fetch lecturer details from the database
-    $row = $result->fetch_assoc();
-    $lecturer_name = $row['Lecturer_Name'];
-    $lecturer_email = $row['Lecturer_Email'];
-    $lecturer_phone = $row['Lecturer_PhoneNumber'];
-    $lecturer_department = $row['Lecturer_Department'];
-} else {
-    echo "Lecturer not found.";
+// Hàm đăng nhập và kiểm tra phân quyền
+function login($conn, $username, $password) {
+    // Truy vấn lấy thông tin người dùng từ database
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? LIMIT 1");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        // Kiểm tra mật khẩu
+        if (password_verify($password, $user['password'])) {
+            // Đăng nhập thành công, trả về thông tin người dùng
+            return $user;
+        } else {
+            return null; // Mật khẩu không đúng
+        }
+    } else {
+        return null; // Người dùng không tồn tại
+    }
+}
+
+// Xử lý đăng nhập
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+    $user = login($conn, $username, $password);
+    
+    if ($user) {
+        // Kiểm tra vai trò người dùng
+        if ($user['role'] === 'admin') {
+            echo "Welcome Admin!";
+            // Điều hướng đến trang quản trị
+        } elseif ($user['role'] === 'lecturer') {
+            echo "Welcome Lecturer!";
+            // Điều hướng đến trang giảng viên
+        } elseif ($user['role'] === 'user') {
+            echo "Welcome User!";
+            // Điều hướng đến trang người dùng
+        } else {
+            echo "Invalid role!";
+        }
+    } else {
+        echo "Invalid username or password!";
+    }
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!-- Form đăng nhập -->
+<form method="POST" action="">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecturer Details</title>
-    <link rel="stylesheet" href="../css/Detail_lecturer.css">
-</head>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
 
-<body>
-    <!-- Lecturer Information Section -->
-    <div class="lecturer-info">
-        <h2>Lecturer Details</h2>
-        <p><strong>Name:</strong> <?= $lecturer_name ?></p>
-        <p><strong>Email:</strong> <?= $lecturer_email ?></p>
-        <p><strong>Phone Number:</strong> <?= $lecturer_phone ?></p>
-        <p><strong>Department:</strong> <?= $lecturer_department ?></p>
-    </div>
-
-    <!-- Banner Section -->
-    <div class="banner">
-        <div class="banner-text">
-            <div class="badge">IT Educator</div>
-            <div class="name"><?= $lecturer_name ?></div>
-            <div class="university"><?= $lecturer_department ?></div>
-            <div class="quote">
-                <span class="quote-icon">“</span>Your motivation to learn is the driving force that makes exam preparation easier.
-            </div>
-        </div>
-        <div class="banner-image">
-            <img src="../img/default-lecturer.jpg" alt="<?= $lecturer_name ?>">
-        </div>
-    </div>
-
-    <?php include '../Component/Footer.php'; ?>
-</body>
-
-</html>
-
-<?php
-$conn->close(); // Close the database connection
-?>
+    <input type="submit" value="Login">
+</form>
