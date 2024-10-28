@@ -57,22 +57,65 @@
         <div class="chat-header">
             <div class="h2">Fast Learn</div>
         </div>
-        <div class="chat-body">
+        <div class="chat-body" id="chat-body">
             <div class="message incoming">
-                <p>Chúng tôi có thể giúp gì cho bạn ?</p>
-            </div>
-            <div class="message outgoing">
-                <p>I have a question about your services.</p>
-            </div>
-            <div class="message incoming">
-                <p>Sure, I'm here to help. What would you like to know?</p>
+                <p>
+                    Mình là chuyên viên hỗ trợ khách hàng tự động của Fast Learn. Cảm
+                    ơn bạn đã đồng hành cùng Fast Learn 🥰 Hãy nhập câu hỏi vào khung chat
+                    để Tâm hỗ trợ bạn một cách tốt nhất nha 🤗
+                </p>
             </div>
         </div>
         <div class="chat-footer">
-            <input placeholder="Type your message" type="text" />
-            <button>Send</button>
+            <input placeholder="Type your message" type="text" id="user-message" />
+            <button onclick="sendMessage()">Send</button>
         </div>
     </div>
+    <script>
+    // Fetch messages from the server
+    async function loadMessages() {
+        const response = await fetch("load_messages.php");
+        const messages = await response.json();
+
+        const chatBody = document.getElementById("chat-body");
+        chatBody.innerHTML = ""; // Clear chat body
+
+        messages.forEach((message) => {
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("message", message.message_type);
+
+            const messageContent = document.createElement("p");
+            messageContent.textContent = message.content;
+
+            messageDiv.appendChild(messageContent);
+            chatBody.appendChild(messageDiv);
+        });
+    }
+
+    // Send a new message to the server
+    async function sendMessage() {
+        const messageContent = document.getElementById("user-message").value;
+
+        if (messageContent.trim() !== "") {
+            await fetch("send_message.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    message_type: "outgoing",
+                    content: messageContent,
+                }),
+            });
+
+            document.getElementById("user-message").value = ""; // Clear input
+            loadMessages(); // Reload messages after sending
+        }
+    }
+
+    // Load messages when the page loads
+    window.onload = loadMessages;
+    </script>
     <button class="chat-box">
         <div class="chat">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -82,7 +125,6 @@
         </div>
         <div class="chat-text">Chat</div>
     </button>
-
     <script>
     const chatBox = document.querySelector(".chat-box");
     const chatCard = document.querySelector(".chat-card");
