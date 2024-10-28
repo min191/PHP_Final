@@ -11,10 +11,10 @@ body {
   align-items: center;
   padding: 15px 50px;
   border-bottom: 1px solid #ddd;
-  position: fixed;
+  /* position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 100; */
 }
 
 .navbar-left {
