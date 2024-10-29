@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastLearn - Instructor Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../img/Logo.png" alt="FastLearn Logo">
+                <h1>FastLearn</h1>
+            </div>
+            <div class="profile">
+                <img src="../img/user.webp" alt="Profile Image">
+                <p><a href="#">admin</a></p>
+            </div>
+            <ul>
+                <li><a href="#">Course Manager</a>
+                    <ul class="submenu">
+                        <li><a href="course-management">Course Management</a></li>
+                        <li><a href="instructor-management">Instructor Management</a></li>
+                        <li><a href="student-management">Student Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Account</a>
+                    <ul class="submenu">
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Exit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Phần Chào Mừng -->
+        <!-- <div class="main-content" id="welcome-content">
+            <h2>Welcome to FastLearn!</h2>
+            <p>This is the trainer dashboard. You can manage your courses, news, and account here.</p>
+        </div> -->
+        <div class="main-content">
+            <h2>Change Password</h2>
+        
+            <!-- Change Password Form -->
+            <form action="change_password.php" method="POST" class="change-password-form">
+                <div class="form-group">
+                    <label for="current_password">Current Password:</label>
+                    <input type="password" id="current_password" name="current_password" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="new_password">New Password:</label>
+                    <input type="password" id="new_password" name="new_password" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="confirm_password">Confirm New Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+        
+                <button type="submit" class="action-button">Change Password</button>
+            </form>
+        </div>
+
+</body>
+
+</html>
