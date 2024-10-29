@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-    <!-- Thông tin meta và các tài nguyên bên ngoài cho tài liệu -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Liên kết đến tệp CSS bên ngoài để định dạng giao diện -->
     <link rel="stylesheet" href="../css/Detail_product.css">
 </head>
 
 <body>
-    <!-- Bao gồm phần đầu (header) từ một tệp PHP bên ngoài -->
     <?php include '../Component/Header.php';?>
     <div class="course-container">
         <div class="course-info">
@@ -32,7 +29,6 @@
             </div>
         </div>
     </div>
-    <!-- What will you learn ? -->
     <div style="
     display: flex;
     justify-content: center;
@@ -82,7 +78,6 @@
             </div>
         </div>
     </div>
-    <!-- Khối chính cho nội dung khóa học -->
 
     <div id="course_content">
         <!-- Tiêu đề của phần nội dung khóa học -->

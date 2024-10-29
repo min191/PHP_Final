@@ -43,7 +43,7 @@
                 </div> -->
 
                 <h3>Khóa Học Đã Đăng Kí:</h3>
-                <table>
+                <table class="table">
                     <thead>
                         <tr>
                             <th>STT</th>

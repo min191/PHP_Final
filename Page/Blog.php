@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/Blog.css">
     <link rel="stylesheet" href="../css/Blog-Q&A.css">
+    
 </head>
 
 <body>

@@ -58,7 +58,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                            <img src="../img/Courses/HTML&Css.jpg" alt="" class="card-img" />
                         </div>
                     </div>
 
@@ -71,7 +71,10 @@
                             repellat veniam modi reprehenderit.
                         </p>
 
-                        <button class="button-Learning ">See more</button>
+                        <button 
+                        class="button-Learning"
+                        onclick="window.location.href='./learning-path-Front.php'"
+                        >See more</button>
                     </div>
                 </div>
 
