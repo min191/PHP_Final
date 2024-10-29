@@ -23,7 +23,7 @@
             </div>
             <!-- Right -->
             <div class="col-lg-5 p-0">
-                <form class="bg-white rounded-3 py-5 px-5 mx-5 my-5">
+                <form class="bg-white rounded-3 py-5 px-5 mx-5 my-5" action="HomePage.php" method="post">
                     <div class="fw-bold text-center mb-3 fs-1 text-info">Log In</div>
                     <!-- Username -->
                     <div class="form-input text-start mb-4">
@@ -32,7 +32,8 @@
                             <strong class="text-danger">*</strong>
                         </label>
                         <div class="mx-3">
-                            <input id="phone" class="border w-100 rounded-pill px-3 py-2 border-secondary"
+                            <input name="user_name" id="phone"
+                                class="border w-100 rounded-pill px-3 py-2 border-secondary"
                                 placeholder="Enter phone number" data-gtm-form-interact-field-id="0" />
                         </div>
                         <div class="error text-danger fs-6 ms-4" id="error-message" style="display: none;">
@@ -46,8 +47,9 @@
                             <strong class="text-danger">*</strong>
                         </label>
                         <div class="mx-3">
-                            <input id="password" class="border w-100 rounded-pill px-3 py-2 border-secondary"
-                                type="password" placeholder="Enter password" />
+                            <input name="user_pass" id="password"
+                                class="border w-100 rounded-pill px-3 py-2 border-secondary" type="password"
+                                placeholder="Enter password" />
                         </div>
                         <div class="error text-danger fs-6 ms-4" id="error-pass" style="display: none;">
                             Wrong password
@@ -75,6 +77,7 @@
             </div>
         </div>
     </div>
+    
     <?php include '../Component/footer.php';?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

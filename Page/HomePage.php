@@ -58,7 +58,7 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="../img/Courses/HTML&Css.jpg" alt="" class="card-img" />
+                            <img src="../img/font-end-icon.jpg" alt="" class="card-img" />
                         </div>
                     </div>
 
@@ -84,12 +84,12 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                            <img src="../img/Back-end-icon.webp" alt="" class="card-img" />
                         </div>
                     </div>
 
                     <div class="card-content">
-                        <h2 class="name-Learning">Front-end</h2>
+                        <h2 class="name-Learning">Back-end</h2>
                         <p class="description-Learning">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
                             fuga animi dignissimos eos autem minus placeat possimus aliquid
@@ -97,7 +97,8 @@
                             repellat veniam modi reprehenderit.
                         </p>
 
-                        <button class="button-Learning ">See more</button>
+                        <button class="button-Learning"
+                        onclick="window.location.href='./learning-path-Back.php'">See more</button>
                     </div>
                 </div>
 
@@ -107,11 +108,11 @@
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
+                            <img src="../img/data-icon.jpg" alt="" class="card-img" />
                         </div>
                     </div>
                     <div class="card-content">
-                        <h2 class="name-Learning">Front-end</h2>
+                        <h2 class="name-Learning">Data-base</h2>
                         <p class="description-Learning">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
                             fuga animi dignissimos eos autem minus placeat possimus aliquid
@@ -119,63 +120,12 @@
                             repellat veniam modi reprehenderit.
                         </p>
 
-                        <button class="button-Learning ">See more</button>
+                        <button class="button-Learning"
+                        onclick="window.location.href='./learning-path-Database.php'">See more</button>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name-Learning">Front-end</h2>
-                        <p class="description-Learning">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
-                            fuga animi dignissimos eos autem minus placeat possimus aliquid
-                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
-                            repellat veniam modi reprehenderit.
-                        </p>
-
-                        <button class="button-Learning ">See more</button>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="../img/Courses/java.jpg" alt="" class="card-img" />
-                        </div>
-                    </div>
-
-                    <div class="card-content">
-                        <h2 class="name-Learning">Front-end</h2>
-                        <p class="description-Learning">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
-                            fuga animi dignissimos eos autem minus placeat possimus aliquid
-                            aspernatur accusantium a explicabo sint, sequi officiis nesciunt
-                            repellat veniam modi reprehenderit.
-                        </p>
-
-                        <button class="button-Learning ">See more</button>
-                    </div>
-                </div>
-
             </div>
         </div>
-
-        <div class="carousel-controls-Learning">
-            <button class="prev-btn-Learning" onclick="slideCards('prev')">&#10094;</button>
-            <button class="next-btn-Learning" onclick="slideCards('next')">&#10095;</button>
-        </div>
-
     </div>
 
     <!-- Courses Section -->
@@ -194,7 +144,7 @@
             </li>
             <li class="card-item">
                 <a href="#" class="card-link">
-                    <img src="../img/Courses/js co ban.jpg" alt="Card Image" class="card-image">
+                    <img src="../img/Courses/JScore.jpg" alt="Card Image" class="card-image">
                     <p class="badge badge-developer">Front-end</p>
                     <h2 class="card-title">JavaScript is a popular programming language primarily used to create dynamic
                         interactions on the web.</h2>
@@ -258,7 +208,4 @@
 </body>
 <!-- <script src="../js/login.js"></script> -->
 <script src="../js/Carousel_home.js"></script>
-<script src="../js/Learning_home.js"></script>
-
-
 </html>

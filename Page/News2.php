@@ -134,31 +134,6 @@
                         bạn có thể tham khảo.</p>
                 </li>
             </ul>
-            <hr>
-            <h3 style="text-align: center;">Bài Viết Nổi Bật Khác</h3>
-            <h3>News</h3>
-            <section class="news">
-                <div class="cards-new">
-                    <!-- Repeatable Card Structure -->
-                    <div class="card">
-                        <img src="news-image1.png" alt="News 1">
-                        <h3>News Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <img src="news-image1.png" alt="News 1">
-                        <h3>News Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button>Read More</button>
-                    </div>
-                    <div class="card">
-                        <img src="news-image1.png" alt="News 1">
-                        <h3>News Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button>Read More</button>
-                    </div>
-            </section>
         </div>
 
         <?php include '../Component/Footer.php';?>

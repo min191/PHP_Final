@@ -112,8 +112,6 @@ h2::after {
 /* Make slide-content wide enough to accommodate all cards */
 .slide-content-Learning {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: calc(360px * 5);
   gap: 20px;
   padding: 40px;
 }

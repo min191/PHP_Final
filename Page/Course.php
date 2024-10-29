@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="featured-image">
-                <img src="../img/Courses/js co ban.jpg" alt="JavaScript Course">
+                <img src="../img/Courses/JScore.jpg" alt="JavaScript Course">
             </div>
         </div>
     </section>
@@ -45,7 +45,7 @@
                     <p>Introduction to C++ programming.</p>
                 </div>
                 <div class="course-card">
-                    <img src="../img/Courses/js co ban.jpg" alt="JavaScript Basic">
+                    <img src="../img/Courses/JScore.jpg" alt="JavaScript Basic">
                     <h3>JavaScript (Basic)</h3>
                     <p>Introduction to JavaScript programming.</p>
                 </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/learning-path-Front.css">
+    <link rel="stylesheet" href="../css/learning-path.css">
     <title>Front-end</title>
 </head>
 
@@ -61,7 +61,7 @@
         </p>
         <table>
             <tr>
-                <td class="image-cell"><img src="../img/Courses/react js.jpg" alt="React JS" /></td>
+                <td class="image-cell"><img src="../img/Courses/reactjs.jpg" alt="React JS" /></td>
                 <td class="info">
                     <p>React JS</p>
                     <p>ReactJS course from basic to advanced, the result of this course

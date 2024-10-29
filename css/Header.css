@@ -355,14 +355,14 @@ body {
 
 .incoming {
   background-color: #e1e1e1;
-  width: 200px;
+  max-width: 180px;
   text-align: left;
   align-self: flex-start;
 }
 
-.outgoing {
+.outcoming {
   background-color: #1a9fff;
-  width: 200px;
+  max-width: 180px;
   text-align: right;
   align-self: flex-end;
 }

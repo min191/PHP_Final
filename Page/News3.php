@@ -79,29 +79,6 @@
             hội.</p>
         <br><br>
         <p>Cảm ơn mọi người đã đọc!</p>
-        <hr>
-        <section class="news">
-            <div class="cards-new">
-                <!-- Repeatable Card Structure -->
-                <div class="card">
-                    <img src="news-image1.png" alt="News 1">
-                    <h3>News Title 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Read More</button>
-                </div>
-                <div class="card">
-                    <img src="news-image1.png" alt="News 1">
-                    <h3>News Title 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Read More</button>
-                </div>
-                <div class="card">
-                    <img src="news-image1.png" alt="News 1">
-                    <h3>News Title 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Read More</button>
-                </div>
-        </section>
     </div>
     <?php include '../Component/Footer.php';?>
 </body>

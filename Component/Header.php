@@ -93,15 +93,15 @@
       function sendMessage() {
         const message = userMessageInput.value;
         if (message.trim() !== "") {
-          // Create a new message element for the outgoing message
-          const outgoingMessage = document.createElement("div");
-          outgoingMessage.classList.add("message", "outgoing");
+          // Create a new message element for the outcoming message
+          const outcomingMessage = document.createElement("div");
+          outcomingMessage.classList.add("message", "outcoming");
           
           const messageText = document.createElement("p");
           messageText.textContent = message;
           
-          outgoingMessage.appendChild(messageText);
-          chatBody.appendChild(outgoingMessage);
+          outcomingMessage.appendChild(messageText);
+          chatBody.appendChild(outcomingMessage);
     
           // Clear the input field
           userMessageInput.value = "";
