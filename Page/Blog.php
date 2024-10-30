@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.84.0" />
-    <title>Blog Template · Bootstrap v5.0</title>
+    <title>Blog Template</title>
     <!-- Bootstrap core CSS -->
     <link
       rel="stylesheet"
@@ -64,6 +65,17 @@
           font-size: 3.5rem;
         }
       }
+      .bg-image {
+    background-image: url('https://i.pinimg.com/564x/96/cf/a9/96cfa90d02e6b1d03be915dd71074e79.jpg'); /* Update this path */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    color: white; /* Keep text color white for readability */
+    height: 580px; /* Set a height for the div */
+    border-radius: 10px; /* Add rounded corners */
+    display: flex; /* Use flexbox for centering content */
+    padding: 20px; /* Add padding inside the div */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
     </style>
 
     <!-- Custom styles for this template -->
@@ -74,19 +86,17 @@
   </head>
   <body>
   <?php include '../Component/Header.php';?>
-    <main class="container mt-3 my-5">
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+  <main class="container mt-3 my-5">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-image">
         <div class="col-md-6 px-0">
           <h1 class="display-4 fst-italic">
-            Title of a longer featured blog post
+          Mình đã làm thế nào để hoàn thành dự án website trong 15 ngày
           </h1>
           <p class="lead my-3">
-            Multiple lines of text that form the lede, informing new readers
-            quickly and efficiently about what’s most interesting in this post’s
-            contents.
+          Xin chào mọi người, mình là Lý Cao Nguyên. Mình đã làm một dự án website front-end với hơn 100 bài học và 200 bài viết.
           </p>
           <p class="lead mb-0">
-            <a href="#" class="text-white fw-bold">Continue reading...</a>
+            <a href="News3.php" class="text-blue fw-bold">Continue reading...</a>
           </p>
         </div>
       </div>
@@ -95,12 +105,16 @@
   <div class="col-md-6">
     <div style="height: 350px;" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
       <div class="col p-4 d-flex flex-column position-static">
-        <h3 class="mb-0">Mình đã làm thế nào để hoàn thành dự án website trong 15 ngày</h3>
+        <h3 class="mb-0">ReactJS with Typescript [Series]. Phần 1 Basic Typescript</h3>
         <div class="mb-1 text-muted">Nov 12</div>
         <p class="card-text mb-auto">
-          Xin chào mọi người, mình là Lý Cao Nguyên. Mình đã làm một dự án website front-end với hơn 100 bài học và 200 bài viết.
+        Chào các bạn cộng đồng lập trình f8 mình cũng là một thành viên.Hôm nay mình muốn viết một series về
+                ReactJS
+                kết hợp với typescript . Mình mong mọi người sẽ đón nhận và trao đổi kiến thức với nhau.Bài viết này sẽ
+                viết
+                về những điều tuyệt vời và hay ho khi làm việc với typescript nhé.
         </p>
-        <a href="News1.php" class="stretched-link">Continue reading</a>
+        <a href="News2.php" class="stretched-link">Continue reading</a>
       </div>
     </div>
   </div>
@@ -112,7 +126,7 @@
         <p class="mb-auto">
           Chào bạn! Nếu bạn đã là học viên khóa Pro của ..., chắc hẳn bạn đã biết tới "Dev Mode" - giúp thực hành code song song khi xem video (bạn không cần phải dùng tới VS Code nữa).
         </p>
-        <a href="News2.php" class="stretched-link">Continue reading</a>
+        <a href="News1.php" class="stretched-link">Continue reading</a>
       </div>
     </div>
   </div>
